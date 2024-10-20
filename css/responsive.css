@@ -1,0 +1,135 @@
+@media screen and (max-width: 900px) {
+
+  header .menu-desktop,
+  header .btn-contact {
+    display: none;
+  }
+
+  header .interface .btn-menu-mob {
+    display: block;
+  }
+
+  header .interface .logo img {
+    transform: translateX(-20rem);
+  }
+
+  .hero-site .txt-hero h1,
+  .hero-site .txt-hero p {
+    transform: translateY(5.5rem) translateX(-5rem);
+  }
+
+  .hero-site .txt-hero button {
+    transform: translateY(6rem) translateX(-5rem)
+  }
+
+  .fleet {
+    padding: 3rem;
+  }
+
+  .places .txt-destinations {
+    font-size: 3rem;
+  }
+
+  .destinations .destin-box p {
+    font-size: 1.2rem;
+  }
+
+  .advantages .itens-container .txt-itens p {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .destinations .destin-box {
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header .interface .logo img {
+    transform: translateX(-12rem);
+  }
+
+  .interface {
+    max-width: 52rem;
+    margin: 0 3%;
+    padding: 0 2%;
+  }
+
+  .hero-site .txt-hero h1 {
+    transform: translateY(-9rem);
+    text-align: center;
+  }
+
+  .hero-site .txt-hero h1 span {
+    display: inline;
+
+  }
+
+  .hero-site .txt-hero p {
+    width: 100%;
+    transform: translateY(18rem);
+    text-align: center;
+  }
+
+  .hero-site .txt-hero button {
+    transform: translateX(16rem) translateY(18rem);
+  }
+
+  .fleet .swiper-slide {
+    width: 28rem;
+  }
+
+  .fleet .swiper-slide img {
+    height: 26rem;
+  }
+
+  .txt-destinations,
+  .destinations {
+    display: block;
+    width: 100%;
+  }
+
+  .places .txt-destinations {
+    position: static;
+
+  }
+
+  .places .txt-destinations {
+    font-size: 3rem;
+  }
+
+  .advantages .itens-container {
+    gap: 5%;
+    padding: 1rem 0;
+  }
+
+  .advantages .itens-container .txt-itens h3 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .advantages .itens-container .img-itens img {
+    width: 22rem;
+    height: 20rem;
+  }
+
+  .txt-contact,
+  .icons-contact {
+    display: block;
+    width: 100%;
+  }
+
+  .contact .txt-contact h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+
+  }
+
+  .contact .icons-contact button {
+    margin: 2rem auto;
+  }
+
+}

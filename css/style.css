@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #bdd7ea;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 8rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(27, 58, 88, 0.7);
+  border-radius: 5rem;
+}
+
+.interface {
+  max-width: 128rem;
+  margin: 0 7%;
+  padding: 0 4%;
+}
+
+header {
+  width: 100%;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+header .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5rem;
+}
+
+header .interface .logo img {
+  width: 4rem;
+
+}
+
+header .interface .menu-desktop nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header .interface .menu-desktop nav ul li {
+  display: inline-flex;
+  margin: 0 3rem;
+}
+
+header .interface .menu-desktop nav ul li a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #dbecf7;
+  transition: 0.3s;
+}
+
+header .interface .menu-desktop nav ul li a:hover {
+  transform: scale(1.2);
+  color: #dbecf7;
+}
+
+header .interface .btn-contact button,
+.hero-site .txt-hero button {
+  font-size: 2.2rem;
+  padding: 0.5rem 1.5rem;
+  color: #dbecf7;
+  background: transparent;
+  border: 1px solid #dbecf7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header .interface .btn-contact button:hover,
+.hero-site .txt-hero button:hover {
+  color: rgb(119, 161, 203);
+  background: #dbecf7;
+}
+
+header.change-color {
+  background-color: rgba(27, 58, 88, 0.7);
+  transition: 0.5s;
+}
+
+header .interface .btn-menu-mob {
+  display: none;
+  position: relative;
+  z-index: 999;
+}
+
+header .interface .btn-menu-mob div {
+  background-color: #dbecf7;
+  height: 0.3rem;
+  margin: 1rem 0;
+  transition: 0.3s;
+
+}
+
+header .interface .btn-menu-mob .line-menuMob-1.ativo1 {
+  transform: rotate(45deg) translate(30%);
+}
+
+header .interface .btn-menu-mob .line-menuMob-2.ativo2 {
+  transform: rotate(-45deg)translate(30%);
+  width: 3rem;
+}
+
+header .interface .btn-menu-mob .line-menuMob-1 {
+  width: 3rem;
+}
+
+header .interface .btn-menu-mob .line-menuMob-2 {
+  width: 2rem;
+}
+
+header .interface .menu-mobile {
+  width: 0;
+  height: 0;
+  background-color: rgba(27, 57, 88, 0.741);
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+header .interface .menu-mobile nav {
+  width: 90%;
+}
+
+header .interface .menu-mobile nav ul {
+  list-style-type: none;
+}
+
+header .interface .menu-mobile nav a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #dbecf7;
+  display: block;
+  padding: 2rem 0;
+  transition: 0.5s;
+
+}
+
+header .interface .menu-mobile nav a:hover {
+  color: rgb(119, 161, 203);
+  border: 2px solid rgb(119, 161, 203);
+
+}
+
+header .menu-mobile.abrir {
+  width: 100%;
+  height: 100vh;
+}
+
+body.no-overflow {
+  overflow: hidden;
+}
+
+section.hero-site {
+  height: 95vh;
+  background-image: url(../images/celebrity.jpg);
+  background-size: cover;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  color: #dbecf7;
+}
+
+.hero-site .interface {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-site .txt-hero h1 {
+  font-size: 4rem;
+  line-height: 7rem;
+  font-weight: 200;
+}
+
+.hero-site .txt-hero h1 span {
+  display: block;
+  font-weight: 800;
+}
+
+.hero-site .txt-hero p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 2rem 0;
+  width: 70%;
+}
+
+.hero-site .txt-hero p span {
+  display: block;
+}
+
+.fleet .container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.fleet .ships {
+  padding: 10rem 0 15rem 0;
+}
+
+.fleet .ships h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: rgba(27, 58, 88, 0.7);
+  font-weight: 200;
+}
+
+.fleet .ships h1 span {
+  font-weight: 700;
+  display: block;
+}
+
+.fleet .swiper {
+  width: 100%;
+}
+
+.fleet .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 32rem;
+}
+
+.fleet .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 30rem;
+  border-radius: 10px;
+}
+
+.fleet .swiper-slide h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(27, 58, 88, 0.7);
+}
+
+section.places {
+  padding: 8rem 0;
+}
+
+.txt-destinations,
+.destinations {
+  display: inline-block;
+  margin-right: -4px;
+  vertical-align: top;
+  width: 50%;
+}
+
+.places .txt-destinations {
+  position: sticky;
+  top: 50%;
+  padding-bottom: 3rem;
+}
+
+.places .txt-destinations {
+  font-size: 4rem;
+  color: rgba(27, 58, 88, 0.7);
+}
+
+.places .txt-destinations h3 {
+  font-weight: 200;
+  line-height: 6rem;
+}
+
+.places .txt-destinations h3 span {
+  font-weight: 700;
+  display: block;
+}
+
+.destinations .destin-box {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  border: 2px solid rgba(27, 58, 88, 0.7);
+  color: rgba(27, 58, 88, 0.7);
+  border-radius: 5px;
+  padding: 1rem 1.7rem;
+}
+
+.destinations .destin-box img {
+  width: 15rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.destinations .destin-box img:hover {
+  transform: scale(3);
+}
+
+
+.destinations .destin-box h4 {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+.destinations .destin-box h4 span {
+  font-weight: 200;
+}
+
+.destinations .destin-box p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.cruise {
+  height: 60rem;
+  background-image: url(../images/Allure.ship.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  text-align: center;
+}
+
+.cruise>.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(27, 57, 88, 0.53);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.cruise>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  z-index: 2;
+  position: relative;
+}
+
+.cruise h3 {
+  font-size: 3rem;
+  line-height: 5rem;
+  font-weight: 100;
+  color: #dbecf7
+}
+
+.cruise h3 span {
+  display: block;
+  font-weight: 700;
+  color: #dbecf7;
+}
+
+.cruise p {
+  color: #dbecf7;
+  font-size: 2rem;
+}
+
+section.advantages {
+  padding: 8rem 0;
+}
+
+.advantages .itens-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  padding: 2rem 0;
+}
+
+.advantages .itens-container .img-itens img {
+  width: 30rem;
+  height: 25rem;
+  border-radius: 20px;
+}
+
+.advantages .itens-container .img-itens .left {
+  box-shadow: rgba(27, 58, 88, 0.4) -5px 5px, rgba(27, 58, 88, 0.3) -10px 10px,
+    rgba(27, 58, 88, 0.2) -15px 15px, rgba(27, 58, 88, 0.1) -20px 20px,
+    rgba(27, 58, 88, 0.05) -25px 25px;
+}
+
+.advantages .itens-container .img-itens .right {
+  box-shadow: rgba(27, 58, 88, 0.4) 5px 5px, rgba(27, 58, 88, 0.3) 10px 10px,
+    rgba(27, 58, 88, 0.2) 15px 15px, rgba(27, 58, 88, 0.1) 20px 20px,
+    rgba(27, 58, 88, 0.05) 25px 25px;
+}
+
+.advantages .itens-container .txt-itens h3 {
+  font-size: 3rem;
+  color: rgba(27, 58, 88, 0.7);
+  font-weight: 800;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+}
+
+.advantages .itens-container .txt-itens h3.right,
+.advantages .itens-container .txt-itens p.right {
+  text-align: right;
+}
+
+.advantages .itens-container .txt-itens h3 span {
+  font-weight: 200;
+}
+
+.advantages .itens-container .txt-itens p {
+  font-size: 2rem;
+  color: rgba(27, 58, 88, 0.7);
+}
+
+section.contact {
+  background-color: #dbecf7;
+  padding: 8rem 0;
+}
+
+.txt-contact,
+.icons-contact {
+  display: inline-block;
+  width: 50%;
+  margin-right: -4px;
+  vertical-align: middle;
+}
+
+.contact .txt-contact h3 {
+  font-size: 3.5rem;
+  line-height: 5rem;
+  color: rgba(27, 58, 88, 0.7);
+  font-weight: 300;
+}
+
+.contact .txt-contact h3 span {
+  display: block;
+  font-weight: 700;
+}
+
+.contact .txt-contact p {
+  color: rgba(27, 58, 88, 0.7);
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+.contact .icons-contact a {
+  text-decoration: none;
+}
+
+.contact .icons-contact button {
+  width: 30rem;
+  height: 7rem;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid rgba(27, 58, 88, 0.7);
+  color: rgba(27, 58, 88, 0.7);
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem;
+  align-items: center;
+  margin: 0 auto 2rem auto;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact .icons-contact button:hover {
+  background-color: rgba(27, 58, 88, 0.6);
+  color: #dbecf7;
+}
+
+.contact .icons-contact button i {
+  font-size: 4rem;
+}
+
+footer {
+  color: rgba(27, 58, 88, 0.7);
+  text-align: center;
+  width: 100%;
+  padding: 1rem 0;
+  gap: 3rem;
+}
+
+footer .top-footer i {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, rgb(28, 79, 135) 5%, rgba(27, 58, 88, 0.4));
+  font-size: 4rem;
+  margin: 2rem 3rem 2.5rem 3rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer .top-footer i:hover {
+  color: rgba(27, 58, 88, 0.7);
+
+}
+
+footer .middle-footer a {
+  color: rgba(27, 58, 88, 0.7);
+  font-size: 1.5rem;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+footer .middle-footer a:hover {
+  color: rgb(28, 79, 135);
+}
+
+footer .bottom-footer {
+  margin: 1rem;
+
+}
+
+footer .bottom-footer p {
+  margin: 0.7rem;
+}
